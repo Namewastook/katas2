@@ -7,63 +7,65 @@
     <title>Document</title>
 </head>
 <body>
+    <script> 
+        console.log("Displays the numbers from 1-20")
+        for(let a = 1; a <=20; a++)          // counts from 1-20
+        console.log(a)                       // prints 1-20
+    </script>
     
-<script>
-    function add (a, b){
-        return a + b;
-    }
-console.log(add(2, 4))
-</script>
+    <script>
+        console.log("Displays the even numbers from 2-20")
+        for(let b = 2; b < 22; b+=2)        // counts from 2-20 by evens
+        console.log(b)                      // prints 2-20 by evens 
+    </script>
+        
+    <script>
+        console.log("Displays the odd numbers from 1-19")
+        for(let c = 1; c < 21; c+=2)       // counts from 1-20 by odds
+        console.log(c)                     // prints 1-20 by odds
+    </script>
 
-<script>
-    function multiply(a, b){
-        let counter = 1
-        let c = 0
-        while (counter <= b){
-            c = add(c, a);
-            counter ++
-        }
-        return c
-    } 
-console.log((multiply(6, 8)))
-</script>
+    <script>
+    console.log("Displays 5-100 counting by 5s")
+        for(let d = 5; d <= 100; d+=5)    // counts from 5-100 by 5s
+        console.log(d)                    // prints 5-100 by 5s  
+    </script>
 
-<script>
-    function power(a, b){
-        let counter = 1
-        let c = 1
-        while (counter <=b){
-            c = multiply(c, a)
-            counter++
-        }
+    <script>
+        console.log("Displays the squares of 1-10")
+        for(let e = 1; e <= 10; e++)      // counts from 1-10
+        console.log(e*e)                  // prints squares of 1-10
+    </script>
 
-         return c
-    }
-    console.log(power(3, 4))
-</script>
+    <script>
+    console.log("Counts down from 20-1")
+        for(let f = 20; f > 0; f--)       // counts down from 20-1
+        console.log(f)                    // prints down from 20-1
+    </script>
 
-<script>
-        function factorial(a){
-        let counter = a
-        let c = a
-        while (counter >1){
-            c = multiply(c, counter-1)
-            counter--
-        }
+    <script>
+    console.log("Counts down from 20-2 by evens")
+        for (let g = 20; g > 0; g-=2)     // counts down from 20-2 by evens
+        console.log(g)                    // prints down from 20-2
+    </script>
 
-         return c
-    }
-    console.log(factorial(6))
-</script>
+    <script>
+        console.log("Counts down from 19-1 by odds")
+        for( let h = 19; h > 0; h-=2)    // counts down from 19-1 by odds
+        console.log(h)                   // prints down from 19-1   
+    </script>
 
-<script>
-    function fibonacci(num) {
-  if (num <= 1) return 1;
+    <script>
+        console.log("counts down from 100-5 by 5s")
+        for(let i = 100; i > 0; i-=5)   // counts down from 100-5 by 5s
+        console.log(i)                 // prints down from 100-5 by 5s
+    </script>
 
-  return fibonacci(num - 1) + fibonacci(num - 2);
-}
-console.log(fibonacci(6))
-</script>
+    <script>
+        console.log("counts down from 10-1 showing the squares.")
+        for(let j = 10; j >=1; j--)    //counts backwards from 10-1 and squares the numbers
+        console.log(j*j)               //prints the squares of 10-1 in reverse.
+    </script>
 
 </body>
 </html>
