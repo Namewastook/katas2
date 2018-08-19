@@ -57,19 +57,12 @@ console.log((multiply(6, 8)))
 </script>
 
 <script>
-    function fibonacci(num){
-  var a = 1, b = 0, temp;
+    function fibonacci(num) {
+  if (num <= 1) return 1;
 
-  while (num >= 0){
-    temp = a;
-    a = a + b;
-    b = temp;
-    num--;
-  }
-
-  return b;
+  return fibonacci(num - 1) + fibonacci(num - 2);
 }
-console.log(fibonacci(7))
+console.log(fibonacci(6))
 </script>
 
 </body>
